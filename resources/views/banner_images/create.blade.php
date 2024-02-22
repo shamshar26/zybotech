@@ -12,7 +12,7 @@
                 <label for="image">Image</label>
                 <input type="file" name="image" id="image" class="form-control-file" required>
             </div>
-            <button type="submit" class="btn btn-primary">Create</button>
+            <button type="submit" class="btn btn-primary bg-primary">Create</button>
         </form>
     </div>
 @endsection

@@ -6,6 +6,7 @@ use App\Http\Controllers\BannerController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ZyboController;
 
 
 /*
@@ -22,6 +23,9 @@ use App\Http\Controllers\BlogController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/zybo',[ZyboController::class,'index'])->name('zybo');
 
 
 Route::get('/dashboard', function () {
@@ -76,5 +80,10 @@ Route::post('/banner-images', [BannerController::class, 'store'])->name('banner-
  Route::get('/blog/{id}/edit', [BlogController::class, 'edit'])->name('blogs.edit');
  Route::put('/blog/{id}', [BlogController::class, 'update'])->name('blogs.update');
  Route::delete('/blog/{id}', [BlogController::class, 'destroy'])->name('blogs.destroy');
+
+
+ 
+
+ 
 });
 require __DIR__.'/auth.php';

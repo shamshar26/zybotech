@@ -21,11 +21,12 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                     <a class="nav-link" href="{{ route('services.index') }}">Services</a>
                     </x-nav-link>
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                    <a class="nav-link" href="{{ route('portfolio.index') }}">Portfolio</a>
-                    </x-nav-link>
+                   
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                     <a class="nav-link" href="{{ route('blogs.index') }}">Blog</a>
+                    </x-nav-link>
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <a class="nav-link" href="{{  url('/zybo')  }}">zybo-ui</a>
                     </x-nav-link>
                     
                 </div>

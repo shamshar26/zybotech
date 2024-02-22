@@ -31,7 +31,7 @@ class BannerController extends Controller
         ]);
 
         // Upload image
-        $imagePath = $request->file('image')->store('banners');
+        $imagePath = $request->file('image')->store('banners','public');
 
         // Create banner image
         Banner::create([
